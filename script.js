@@ -1,3 +1,11 @@
+const uptimeDays = document.getElementById("uptime-days");
+if (uptimeDays) {
+  const launch = new Date("2026-05-07");
+  const today = new Date();
+  const days = Math.floor((today - launch) / (1000 * 60 * 60 * 24));
+  uptimeDays.textContent = days;
+}
+
 const form = document.getElementById("waitlist-form");
 const statusText = document.getElementById("form-status");
 
